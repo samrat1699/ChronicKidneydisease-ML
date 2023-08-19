@@ -1,6 +1,6 @@
 # Chronic Kidney Disease Prediction
 
-![Project Logo](logo.png) <!-- You can add a logo or image here -->
+![Project Logo](e.png) <!-- You can add a logo or image here -->
 
 ## Overview
 
@@ -9,7 +9,6 @@ This project aims to develop a machine learning model to predict chronic kidney 
 ## Table of Contents
 
 - [Dataset](#dataset)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Models](#models)
 - [Contributing](#contributing)
@@ -17,13 +16,9 @@ This project aims to develop a machine learning model to predict chronic kidney 
 
 ## Dataset
 
-The dataset used in this project contains medical data related to chronic kidney disease. It includes features such as age, blood pressure, and various blood test results. The dataset is available at [link-to-dataset](link-to-dataset).
+The dataset used in this project contains medical data related to chronic kidney disease. It includes features such as age, blood pressure, and various blood test results. The dataset is available at [https://www.kaggle.com/datasets/mansoordaku/ckdisease](link-to-dataset).
 
-## Installation
 
-1. Clone this repository: `git clone https://github.com/your-username/chronic-kidney-disease-prediction.git`
-2. Navigate to the project directory: `cd chronic-kidney-disease-prediction`
-3. Install the required dependencies: `pip install -r requirements.txt`
 
 ## Usage
 
@@ -45,9 +40,9 @@ Detailed results and analysis for each model can be found in the project report.
 
 Contributions to this project are welcome! Here's how you can contribute:
 1. Fork the repository.
-2. Create a new branch for your feature: `git checkout -b feature/your-feature`
-3. Commit your changes: `git commit -m "Add your feature"`
-4. Push to your branch: `git push origin feature/your-feature`
+2. Create a new branch for your feature
+3. Commit your changes
+4. Push to your branch
 5. Create a pull request.
 
 ## License
