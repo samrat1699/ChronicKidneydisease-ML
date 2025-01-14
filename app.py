@@ -23,7 +23,7 @@ def predict():
         pc = float(request.form['packed_cell_volume'])
 
         values = np.array([[sg, htn, hemo, dm, al, rc, pc]]).astype(float)
-        prediction = model.predict(values)
+        prediction = model.predict(values).astype(float)
 
         return render_template('result.html', prediction=prediction)
 
