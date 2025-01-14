@@ -81,6 +81,7 @@
     </div>
 
     <form action="{{ url_for('predict') }}" method="POST">
+
         <h3>Specific Gravity</h3>
         <input name="specific_gravity" placeholder="Ex: (1.005,1.010,1.015,1.020,1.025)" required>
 
@@ -88,7 +89,7 @@
         <input name="hypertension" placeholder="Yes = 1, No = 0" required>
 
         <h3>Hemoglobin</h3>
-        <input name="haemoglobin" placeholder="in g/dL" required>
+        <input name="haemoglobin" placeholder="in g/dL: (3.1,4.8, 5.5, 5.6,....,17.8)" required>
 
         <h3>Diabetes Mellitus</h3>
         <input name="diabetes_mellitus" placeholder="Yes = 1, No = 0" required>
@@ -97,15 +98,17 @@
         <input name="albumin" placeholder="(0, 1, 2, 3, 4, 5)" required>
 
         <h3>Red Blood Cell Count</h3>
-        <input name="red_blood_cell_count" placeholder="in Millions/cmm" required>
+        <input name="red_blood_cell_count" placeholder="in Millions/cmm: (2.100, 2.2398,6.5000,....,8.000)" required>
 
         <h3>Packed Cell Volume</h3>
         <input name="packed_cell_volume" placeholder="Normal = 0, Abnormal = 1" required>
 
         <button type="submit">Submit</button>
+
     </form>
 
     <p class="footer-description">©2025 Samrat Kumar Dev Sharma</p>
+    
 </body>
 
 </html>
