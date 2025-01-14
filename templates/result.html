@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronic Kidney Disease Result</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Background Image */
+        body {
+            background-image: url("https://raw.githubusercontent.com/SagarDhandare/Chronic-Kidney-Disease-Prediction-Project/main/kidney.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Container Heading */
+        .container-heading {
+            margin-top: 20px;
+        }
+
+        .heading_font {
+            color: black;
+            font-family: 'Pacifico', cursive;
+            font-size: 50px;
+            font-weight: normal;
+        }
+
+        /* Result Styling */
+        .results h1 {
+            font-size: 30px;
+            margin: 20px 0;
+        }
+
+        .results .danger {
+            color: red;
+        }
+
+        .results .safe {
+            color: green;
+        }
+
+        .gif,
+        .gif1 {
+            margin-top: 20px;
+            max-width: 80%;
+            height: auto;
+        }
+
+        /* Footer */
+        .footer-description {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="{{ url_for('predict') }}" method="post">
+            <h2 class="container-heading">
+                <span class="heading_font">Chronic Kidney Disease Prediction</span>
+            </h2>
+            <br><br><br>
+
+            <!-- Result -->
+            <div class="results">
+                {% if prediction == 1 %}
+                <h1>
+                    <span class="danger">
+                        Oops! 🙁<br><br>You have CHRONIC KIDNEY DISEASE.<br><br>Please consult a doctor.
+                    </span>
+                </h1>
+                <img class="gif" src="{{ url_for('static', filename='no.gif') }}" alt="Chronic Kidney Disease Warning">
+                {% elif prediction == 0 %}
+                <h1>
+                    <span class="safe">
+                        🎉 Congratulations! 🎉<br><br>You DON'T have Chronic Kidney Disease.
+                    </span>
+                </h1>
+                <img class="gif1" src="{{ url_for('static', filename='yes2.webp') }}" alt="Healthy Result">
+                {% endif %}
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div>
+        <p class="footer-description">©2021 Sagar Dhandare</p>
+    </div>
+</body>
+
+</html>
