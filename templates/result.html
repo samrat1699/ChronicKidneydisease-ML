@@ -9,7 +9,7 @@
     <style>
         /* Background Image */
         body {
-            background-image: url("https://raw.githubusercontent.com/SagarDhandare/Chronic-Kidney-Disease-Prediction-Project/main/kidney.jpg");
+            background-image: url('static/image/image (1).jpg');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -25,7 +25,7 @@
         }
 
         .heading_font {
-            color: black;
+            color: yellow;
             font-family: 'Pacifico', cursive;
             font-size: 50px;
             font-weight: normal;
@@ -42,7 +42,7 @@
         }
 
         .results .safe {
-            color: green;
+            color: blue;
         }
 
         .gif,
@@ -74,7 +74,7 @@
                 {% if prediction == 1 %}
                 <h1>
                     <span class="danger">
-                        Oops! 🙁<br><br>You have CHRONIC KIDNEY DISEASE.<br><br>Please consult a doctor.
+                        Oops! 🙁<br><br>YOU HAVE CHRONIC KIDNEY DISEASE.<br><br>Please consult a doctor or going to expert doctor.
                     </span>
                 </h1>
                 <img class="gif" src="{{ url_for('static', filename='no.gif') }}" alt="Chronic Kidney Disease Warning">
@@ -84,7 +84,7 @@
                         🎉 Congratulations! 🎉<br><br>You DON'T have Chronic Kidney Disease.
                     </span>
                 </h1>
-                <img class="gif1" src="{{ url_for('static', filename='yes2.webp') }}" alt="Healthy Result">
+                <img class="gif1" src="{{ url_for('static', filename='yes.gif') }}" alt="Healthy Result">
                 {% endif %}
             </div>
         </form>
@@ -92,7 +92,7 @@
 
     <!-- Footer -->
     <div>
-        <p class="footer-description">©2021 Sagar Dhandare</p>
+        <p class="footer-description">©2025 Samrat Kumar Dev Sharma</p>
     </div>
 </body>
 
